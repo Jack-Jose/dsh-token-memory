@@ -10,7 +10,8 @@ from memory import Store, entries, MAX_FILE_BYTES, PART_BODY_BYTES, resolve_root
 class MemoryTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
-        self.root = Path(self.temp.name)
+        # macOS /var aliases and Windows 8.3 temp paths must compare canonically.
+        self.root = Path(self.temp.name).resolve()
         self.store = Store(self.root, 'session-A')
         self.data = {'kind': 'dialogue', 'key': 'event-1', 'title': '记忆规则',
                      'source': 'session:session-A', 'content': '用户：压缩后只读摘要\n助手：按需检索'}
