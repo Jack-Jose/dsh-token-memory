@@ -1,0 +1,7 @@
+{
+  "kind": "learning",
+  "key": "example-learning-r1",
+  "title": "示例学习：按需恢复记忆",
+  "source": "example:local-demo-not-a-real-video",
+  "content": "记录性质：演示内容，不是真实视频总结。\n知识点：把详细记录留在文件中，恢复时只读短摘要。\n待核验：实际任务的token节省需要测量。"
+}

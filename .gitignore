@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+memory.config.json
+data/
+demo-memory/
+dialogue/
+learning/
+checkpoints/
+*.zip
+*.bak
+.write-lock/
+.writing-*
